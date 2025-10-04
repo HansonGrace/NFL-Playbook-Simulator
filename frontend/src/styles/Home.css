@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+.home-root {
+  background-color: #1a1d29;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  color: #e0e0e0;
+  padding-top: 50px;
+}
+
+.home-content {
+  max-width: 800px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.home-logo {
+  width: 70%;
+  max-width: 700px;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.home-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: 300;
+  text-align: center;
+}
+
+.home-text p {
+  margin: 1rem 0;
+  opacity: 0.9;
+}
+
+.home-text p:first-child {
+  margin-top: 0;
+}
+
+.home-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Typewriter effect */
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  0%, 50% { border-color: transparent; }
+  51%, 100% { border-color: #e0e0e0; }
+}
+
+
+@media (max-width: 768px) {
+  .home-content {
+    padding: 20px;
+  }
+  
+  .home-logo {
+    width: 80%;
+  }
+  
+  .home-text {
+    font-size: 1rem;
+  }
+}
